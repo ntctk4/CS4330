@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ntctk4moviereviews.NYTMovieViewerController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="searchTextField" prefHeight="26.0" prefWidth="414.0" />
+            <Button mnemonicParsing="false" onAction="#handleSearch" text="Search" />
+         </children>
+      </HBox>
+      <ListView fx:id="newsListView" prefHeight="200.0" prefWidth="200.0" />
+      <WebView fx:id="webView" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
